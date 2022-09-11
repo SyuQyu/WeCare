@@ -22,7 +22,7 @@ export default function Footer() {
                             <Box> Universitas Pembangunan Nasional Veteran Jakarta</Box>
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>About Us
+                            <Box borderBottom={1}>About Us</Box>
                                 <Box>
                                     <Link to="Home">
                                         Team
@@ -38,7 +38,6 @@ export default function Footer() {
                                         Careers
                                     </Link>
                                 </Box>
-                            </Box>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             <Box borderBottom={1}>Legal
