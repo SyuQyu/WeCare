@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply text-base font-medium rounded-md p-3;
+}
+
+.btn--color {
+    @apply bg-blueButton text-white;
+}
