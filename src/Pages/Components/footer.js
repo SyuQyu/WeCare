@@ -7,10 +7,7 @@ export default function Footer() {
     return (
         <footer>
             <Box
-                px={{ xs: 3, sm: 10 }}
-                py={{ xs: 3, sm: 10 }}
-                bgcolor="text.secondary"
-                color="white"
+                class="text-white bg-blueCustom "
             >
                 <Container maxWidth="lg">
                     <Grid container spacing={5}>
@@ -40,7 +37,7 @@ export default function Footer() {
                                 </Box>
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Legal
+                            <Box borderBottom={1}>Legal</Box>
                                 <Box>
                                     <Link to="Home">
                                         Terms & Conditions
@@ -57,11 +54,10 @@ export default function Footer() {
                                     </Link>
 
                                 </Box>
-                            </Box>
                         </Grid>
                     </Grid>
                 </Container>
             </Box>
         </footer >
-    )
+    );
 }
