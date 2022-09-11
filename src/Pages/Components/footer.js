@@ -1,68 +1,68 @@
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import link from '@mui/material/Link';
+import { Link } from "react-router-dom";
 
-export default function Footer(){
+export default function Footer() {
     return (
-    <footer>
-    <Box
-     px ={{ xs: 3, sm: 10}}
-     py ={{ xs: 3, sm: 10}}
-     bgcolor="text.secondary"
-     color="white"
-    >
-        <Container maxWidth="lg">
-            <Grid container spacing ={5}>
-                 <Grid item xs={12} sm={4}>
-                        <Box borderBottom={1}>Contact Us</Box>
+        <footer>
+            <Box
+                px={{ xs: 3, sm: 10 }}
+                py={{ xs: 3, sm: 10 }}
+                bgcolor="text.secondary"
+                color="white"
+            >
+                <Container maxWidth="lg">
+                    <Grid container spacing={5}>
+                        <Grid item xs={12} sm={4}>
+                            <Box borderBottom={1}>Contact Us</Box>
                             <Box> Telp 087738123457</Box>
-                                <Box> WA 082928392001</Box>
-                                    <Box> Avaiable Everyday 24 Hours</Box>
-                                        <Box> Universitas Pembangunan Nasional Veteran Jakarta</Box>
-                </Grid>
-                    <Grid item xs={12} sm={4}>
+                            <Box> WA 082928392001</Box>
+                            <Box> Avaiable Everyday 24 Hours</Box>
+                            <Box> Universitas Pembangunan Nasional Veteran Jakarta</Box>
+                        </Grid>
+                        <Grid item xs={12} sm={4}>
                             <Box borderBottom={1}>About Us
                                 <Box>
-                                    <link href = "/" color = "inherit">
+                                    <Link to="Home">
                                         Team
-                                    </link>
+                                    </Link>
                                 </Box>
                                 <Box>
-                                    <link href = "/" color = "inherit">
+                                    <Link to="Home">
                                         Our Story
-                                    </link>
+                                    </Link>
                                 </Box>
                                 <Box>
-                                    <link href = "/" color = "inherit">
+                                    <Link to="Home">
                                         Careers
-                                    </link>
+                                    </Link>
                                 </Box>
                             </Box>
-                    </Grid>
+                        </Grid>
                         <Grid item xs={12} sm={4}>
                             <Box borderBottom={1}>Legal
                                 <Box>
-                                    <link href = "/" color = "inherit">
+                                    <Link to="Home">
                                         Terms & Conditions
-                                    </link>
+                                    </Link>
                                 </Box>
                                 <Box>
-                                    <link href = "/" color = "inherit">
+                                    <Link to="Home">
                                         Privacy Policy
-                                    </link>
+                                    </Link>
                                 </Box>
                                 <Box>
-                                    <link href = "/" color = "inherit">
+                                    <Link to="Home">
                                         Terms of Us
-                                    </link>
-                                
+                                    </Link>
+
                                 </Box>
                             </Box>
+                        </Grid>
                     </Grid>
-            </Grid>
-        </Container>
-    </Box>
-    </footer>
+                </Container>
+            </Box>
+        </footer >
     )
 }
