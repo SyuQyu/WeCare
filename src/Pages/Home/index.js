@@ -6,6 +6,7 @@ import imgHand from '../../Assets/images/3.svg';
 import flag from '../../Assets/images/flag.svg';
 import heart from '../../Assets/images/heart-pulse.svg';
 import users from '../../Assets/images/users.svg';
+import Group1 from '../../Assets/images/Group 1.svg';
 import '../../Assets/css/styles.css';
 export default function Home() {
     return (
@@ -105,6 +106,45 @@ export default function Home() {
                         </Grid>
                     </Grid>
                 </Grid>
+            </Grid>
+
+            <Grid container className='pl-20 pr-20 h-fit mb-20'>
+                <Grid item lg={12} xl={12}>
+                    <p className="text-left pl-10 mt-20 text-3xl font-extrabold text-blueCustom">Get Your Best  Psychiatrist or Psychologist</p>
+                </Grid>
+                <Grid item lg={12} xl={12}>
+                    <p className="text-left pl-10 my-10 text-xl font-bold text-blueCustom">Psychiatrist</p>
+                </Grid>
+                <Grid item lg={12} xl={12}>
+                    <Grid container spacing={5}>
+                        <Grid item lg={3} xl={3}>
+                            <div className="w-5/6 mx-auto">
+                                <div className="bg-blueSoft h-[380px] p-3 rounded-3xl">
+                                    <div className="flex flex-col space-y-4 p-3">
+                                        <div className="w-full">
+                                            <center>
+                                                <img src={Group1} />
+                                            </center>
+                                        </div>
+                                        <div className="w-full">
+                                            <p className="text-black font-bold">Dr. Agus Utomo Sp.KJ</p>
+                                        </div>
+                                        <div className="w-full">
+                                            <p className="text-black text-sm text-left">1 Years</p>
+                                        </div>
+                                        <div className="w-full">
+                                            <div className="flex flex-row justify-between items-center">
+                                                <p className="text-black text-sm text-left">+62 86789085432</p>
+                                                <p className="text-black text-sm text-left">90%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                
             </Grid>
         </>
     )
