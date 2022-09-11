@@ -50,7 +50,7 @@ export default function Home() {
                     <Grid container spacing={5}>
                         <Grid item lg={4} xl={4}>
                             <div className="w-2/3 mx-auto">
-                                <div className="bg-blueMedium h-[300px] p-3 rounded-3xl">
+                                <div className="bg-blueMedium h-[300px] p-3 rounded-3xl shadow-md">
                                     <div className="flex flex-col space-y-4 p-3">
                                         <div className="w-full">
                                             <p className="text-white font-bold">Best Psychiatrist / Psychologist</p>
@@ -69,7 +69,7 @@ export default function Home() {
                         </Grid>
                         <Grid item lg={4} xl={4}>
                             <div className="w-2/3 mx-auto">
-                                <div className="bg-blueSoft h-[300px] p-3 rounded-3xl">
+                                <div className="bg-blueSoft h-[300px] p-3 rounded-3xl shadow-md">
                                     <div className="flex flex-col space-y-4 p-3">
                                         <div className="w-full">
                                             <p className="text-black font-bold">We Care About Your</p>
@@ -89,7 +89,7 @@ export default function Home() {
                         </Grid>
                         <Grid item lg={4} xl={4}>
                             <div className="w-2/3 mx-auto">
-                                <div className="bg-blueMedium h-[300px] p-3 rounded-3xl">
+                                <div className="bg-blueMedium h-[300px] p-3 rounded-3xl shadow-md">
                                     <div className="flex flex-col space-y-4 p-3">
                                         <div className="w-full">
                                             <p className="text-white font-bold">We Are There For</p>
@@ -124,7 +124,7 @@ export default function Home() {
                             dataPsychiatrist?.map((data, index) => (
                                 <Grid item lg={3} xl={3} key={index}>
                                     <div className="w-5/6 mx-auto">
-                                        <div className="bg-blueSoft h-[380px] p-3 rounded-3xl">
+                                        <div className="bg-blueSoft h-[380px] p-3 rounded-3xl shadow-md">
                                             <div className="flex flex-col space-y-4 p-3">
                                                 <div className="w-full">
                                                     <center>
@@ -161,7 +161,7 @@ export default function Home() {
                             dataPsychologist?.map((data, index) => (
                                 <Grid item lg={3} xl={3} key={index}>
                                     <div className="w-5/6 mx-auto">
-                                        <div className="bg-blueSoft h-[380px] p-3 rounded-3xl">
+                                        <div className="bg-blueSoft h-[380px] p-3 rounded-3xl shadow-md">
                                             <div className="flex flex-col space-y-4 p-3">
                                                 <div className="w-full">
                                                     <center>
@@ -194,10 +194,10 @@ export default function Home() {
                         <p className="my-20 text-3xl font-extrabold text-blueCustom">We Care About You</p>
                     </Grid>
                     <Grid item lg={12} xl={12}>
-                        <Grid container spacing={5}>
+                        <Grid container spacing={10}>
                             <Grid item lg={4} xl={4}>
-                                <div className="w-3/2 mx-auto">
-                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl">
+                                <div className="w-3/2">
+                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
                                             <div className="w-full">
                                                 <p className="text-black font-bold text-xl pb-5">Contact Us For Report</p>
@@ -215,8 +215,8 @@ export default function Home() {
                                 </div>
                             </Grid>
                             <Grid item lg={4} xl={4}>
-                                <div className="w-3/2 mx-auto">
-                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl">
+                                <div className="w-3/2">
+                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
                                             <div className="w-full">
                                                 <p className="text-black font-bold text-xl pb-5">Join Community</p>
