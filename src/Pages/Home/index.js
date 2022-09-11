@@ -6,8 +6,10 @@ import imgHand from '../../Assets/images/3.svg';
 import flag from '../../Assets/images/flag.svg';
 import heart from '../../Assets/images/heart-pulse.svg';
 import users from '../../Assets/images/users.svg';
-import Group1 from '../../Assets/images/Group 1.svg';
-import { dataPsychiatrist } from './dataDoctor.js'
+import { dataPsychiatrist } from './dataDoctor.js';
+import { dataPsychologist } from './dataDoctor.js';
+import phone from '../../Assets/images/phone.svg';
+import smile from '../../Assets/images/smile.svg';
 import '../../Assets/css/styles.css';
 export default function Home() {
     return (
@@ -108,6 +110,7 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </Grid>
+
             <Grid container className='pl-20 pr-20 h-fit mb-20'>
                 <Grid item lg={12} xl={12}>
                     <p className="text-left pl-10 mt-20 text-3xl font-extrabold text-blueCustom">Get Your Best  Psychiatrist or Psychologist</p>
@@ -146,6 +149,91 @@ export default function Home() {
                                 </Grid>
                             ))
                         }
+                    </Grid>
+                </Grid>
+
+                <Grid item lg={12} xl={12}>
+                    <p className="text-left pl-10 my-10 text-xl font-bold text-blueCustom">Psychiatrist</p>
+                </Grid>
+                <Grid item lg={12} xl={12}>
+                    <Grid container spacing={5}>
+                        {
+                            dataPsychologist?.map((data, index) => (
+                                <Grid item lg={3} xl={3} key={index}>
+                                    <div className="w-5/6 mx-auto">
+                                        <div className="bg-blueSoft h-[380px] p-3 rounded-3xl">
+                                            <div className="flex flex-col space-y-4 p-3">
+                                                <div className="w-full">
+                                                    <center>
+                                                        <img src={data.img} />
+                                                    </center>
+                                                </div>
+                                                <div className="w-full">
+                                                    <p className="text-black font-bold">{data.name}</p>
+                                                </div>
+                                                <div className="w-full">
+                                                    <p className="text-black text-sm text-left">{data.experience}</p>
+                                                </div>
+                                                <div className="w-full">
+                                                    <div className="flex flex-row justify-between items-center">
+                                                        <p className="text-black text-sm text-left">{data.contact}</p>
+                                                        <p className="text-black text-sm text-left">{data.rate}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Grid>
+                            ))
+                        }
+                    </Grid>
+                </Grid>
+
+                <Grid container className='pl-10 pr-10 h-fit mb-20'>
+                    <Grid item lg={12} xl={12}>
+                        <p className="my-20 text-3xl font-extrabold text-blueCustom">We Care About You</p>
+                    </Grid>
+                    <Grid item lg={12} xl={12}>
+                        <Grid container spacing={5}>
+                            <Grid item lg={4} xl={4}>
+                                <div className="w-3/2 mx-auto">
+                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl">
+                                        <div className="flex flex-col space-y-4 p-3">
+                                            <div className="w-full">
+                                                <p className="text-black font-bold text-xl pb-5">Contact Us For Report</p>
+                                            </div>
+                                            <div className="w-full pb-5">
+                                                <center>
+                                                    <img src={phone} />
+                                                </center>
+                                            </div>
+                                            <div className="w-full">
+                                                <button className="btn btn--color float-center">Contact</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Grid>
+                            <Grid item lg={4} xl={4}>
+                                <div className="w-3/2 mx-auto">
+                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl">
+                                        <div className="flex flex-col space-y-4 p-3">
+                                            <div className="w-full">
+                                                <p className="text-black font-bold text-xl pb-5">Join Community</p>
+                                            </div>
+                                            <div className="w-full pb-5">
+                                                <center>
+                                                    <img src={smile} />
+                                                </center>
+                                            </div>
+                                            <div className="w-full">
+                                                <button className="btn btn--color float-center">Join</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
