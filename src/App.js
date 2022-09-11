@@ -18,7 +18,7 @@ function App() {
       <Route path="Consult" element={ <Consult/> } />
       <Route path="Care" element={ <Care/> } />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </div>
   );
 }
