@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Consult from './Pages/Consult';
 import Care from './Pages/Care';
 import Header from './Pages/Components/header';
+import Footer from './Pages/Components/footer';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
       <Route path="Consult" element={ <Consult/> } />
       <Route path="Care" element={ <Care/> } />
     </Routes>
+    <Footer />
   </div>
   );
 }
