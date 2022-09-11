@@ -7,7 +7,10 @@ module.exports = {
       },
       colors: {
         "blueCustom": "#051287",
-        "disabledColor": "#C4C4C4"
+        "disabledColor": "#C4C4C4",
+        "blueMedium": "#1C2ECD",
+        "blueButton": "#6875F2",
+        "blueSoft": "#F5F6FF"
       }
     },
   },

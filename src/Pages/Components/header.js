@@ -11,7 +11,7 @@ export default function Header(props) {
             <Grid item lg={8}>
                 <Grid container spacing={2}>
                     <Grid item lg={12}>
-                            <Link to="Home" className="justify-center text-xl font-poppins float-left font-bold text-blueCustom">weCare</Link>
+                            <Link to="Home" className="ml-24 justify-center text-xl font-poppins float-left font-bold text-blueCustom">weCare</Link>
                     </Grid>
                 </Grid>
             </Grid>
