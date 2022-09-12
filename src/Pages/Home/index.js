@@ -1,17 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import { Link, useLocation, NavLink } from "react-router-dom";
-import { StylesProvider } from "@material-ui/core/styles";
-import { Grid, CardActions, CardContent, Card } from '@mui/material';
+import React, { useState, useEffect, useRef } from 'react'
+import { useNavigate  } from "react-router-dom";
+import { Grid, } from '@mui/material';
 import imgHand from '../../Assets/images/3.svg';
 import flag from '../../Assets/images/flag.svg';
 import heart from '../../Assets/images/heart-pulse.svg';
 import users from '../../Assets/images/users.svg';
-import { dataPsychiatrist } from './dataDoctor.js';
-import { dataPsychologist } from './dataDoctor.js';
 import phone from '../../Assets/images/phone.svg';
 import smile from '../../Assets/images/smile.svg';
 import '../../Assets/css/styles.css';
-export default function Home() {
+export default function Home(props) {
+    let navigate = useNavigate(); 
+    const aboutSection = useRef(null);
+    const careSection = useRef(null);
+    const scrollDown = (ref) => {
+        window.scrollTo({
+            top: ref.current.offsetTop,
+            behavior: 'smooth',
+        });
+    };
     return (
         <>
             <Grid container className='mt-20 mb-20 pl-20 pr-20 h-fit'>
@@ -21,17 +27,17 @@ export default function Home() {
                             <p className="text-left font-poppins text-2xl font-medium text-blueCustom mb-4">Because Your Life is Precious,</p>
                         </Grid>
                         <Grid item lg={12} xl={12}>
-                            <p className="text-left font-poppins text-5xl font-semibold text-blueCustom mb-8">We Are There For You</p>
+                            <p className="text-left font-poppins text-5xl font-semibold text-blueCustom mb-4">We Are There For You</p>
                         </Grid>
                         <Grid item lg={12} xl={12}>
                             <div className='w-2/3'>
-                                <p className="text-left font-poppins text-xl text-blueMedium mb-4">Nothing is more valuable than your life, therefore if you need help contact us immediately.</p>
+                                <p className="text-left font-poppins text-xl text-blueMedium mb-8">Nothing is more valuable than your life, therefore if you need help contact us immediately.</p>
                             </div>
                         </Grid>
                         <Grid item lg={12} xl={12}>
                             <div className='grid gap-4 grid-cols-2 w-1/3'>
-                                <button className="btn btn--color float-left">Consult</button>
-                                <button className="btn btn--color float-left">Care</button>
+                                <button onClick={() => scrollDown(aboutSection)} className="btn btn--color float-left">Consult</button>
+                                <button onClick={() => scrollDown(careSection)} className="btn btn--color float-left">Care</button>
                             </div>
                         </Grid>
                     </Grid>
@@ -42,7 +48,7 @@ export default function Home() {
                     </center>
                 </Grid>
             </Grid>
-            <Grid container className='pl-20 pr-20 h-fit mb-20'>
+            <Grid container className='pl-20 pr-20 h-fit mb-20' ref={aboutSection}>
                 <Grid item lg={12} xl={12}>
                     <p className="my-20 text-3xl font-extrabold text-blueCustom">Get To More About Us</p>
                 </Grid>
@@ -111,93 +117,17 @@ export default function Home() {
                 </Grid>
             </Grid>
 
-            <Grid container className='pl-20 pr-20 h-fit mb-20'>
-                <Grid item lg={12} xl={12}>
-                    <p className="text-left pl-10 mt-20 text-3xl font-extrabold text-blueCustom">Get Your Best  Psychiatrist or Psychologist</p>
-                </Grid>
-                <Grid item lg={12} xl={12}>
-                    <p className="text-left pl-10 my-10 text-xl font-bold text-blueCustom">Psychiatrist</p>
-                </Grid>
-                <Grid item lg={12} xl={12}>
-                    <Grid container spacing={5}>
-                        {
-                            dataPsychiatrist?.map((data, index) => (
-                                <Grid item lg={3} xl={3} key={index}>
-                                    <div className="w-5/6 mx-auto">
-                                        <div className="bg-blueSoft h-[380px] p-3 rounded-3xl shadow-md">
-                                            <div className="flex flex-col space-y-4 p-3">
-                                                <div className="w-full">
-                                                    <center>
-                                                        <img src={data.img} />
-                                                    </center>
-                                                </div>
-                                                <div className="w-full">
-                                                    <p className="text-black font-bold">{data.name}</p>
-                                                </div>
-                                                <div className="w-full">
-                                                    <p className="text-black text-sm text-left">{data.experience}</p>
-                                                </div>
-                                                <div className="w-full">
-                                                    <div className="flex flex-row justify-between items-center">
-                                                        <p className="text-black text-sm text-left">{data.contact}</p>
-                                                        <p className="text-black text-sm text-left">{data.rate}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Grid>
-                            ))
-                        }
-                    </Grid>
-                </Grid>
-
-                <Grid item lg={12} xl={12}>
-                    <p className="text-left pl-10 my-10 text-xl font-bold text-blueCustom">Psychiatrist</p>
-                </Grid>
-                <Grid item lg={12} xl={12}>
-                    <Grid container spacing={5}>
-                        {
-                            dataPsychologist?.map((data, index) => (
-                                <Grid item lg={3} xl={3} key={index}>
-                                    <div className="w-5/6 mx-auto">
-                                        <div className="bg-blueSoft h-[380px] p-3 rounded-3xl shadow-md">
-                                            <div className="flex flex-col space-y-4 p-3">
-                                                <div className="w-full">
-                                                    <center>
-                                                        <img src={data.img} />
-                                                    </center>
-                                                </div>
-                                                <div className="w-full">
-                                                    <p className="text-black font-bold">{data.name}</p>
-                                                </div>
-                                                <div className="w-full">
-                                                    <p className="text-black text-sm text-left">{data.experience}</p>
-                                                </div>
-                                                <div className="w-full">
-                                                    <div className="flex flex-row justify-between items-center">
-                                                        <p className="text-black text-sm text-left">{data.contact}</p>
-                                                        <p className="text-black text-sm text-left">{data.rate}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Grid>
-                            ))
-                        }
-                    </Grid>
-                </Grid>
-
+            <Grid container className='pl-20 pr-20 h-fit mb-20' ref={careSection}>
                 <Grid container className='pl-10 pr-10 h-fit mb-20'>
                     <Grid item lg={12} xl={12}>
                         <p className="my-20 text-3xl font-extrabold text-blueCustom">We Care About You</p>
                     </Grid>
                     <Grid item lg={12} xl={12}>
                         <Grid container spacing={10}>
+                            <Grid item lg={2} xl={2} />
                             <Grid item lg={4} xl={4}>
-                                <div className="w-3/2">
-                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl shadow-md">
+                                <div className="w-full">
+                                    <div className="bg-blueSoft h-fit p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
                                             <div className="w-full">
                                                 <p className="text-black font-bold text-xl pb-5">Contact Us For Report</p>
@@ -208,15 +138,18 @@ export default function Home() {
                                                 </center>
                                             </div>
                                             <div className="w-full">
-                                                <button className="btn btn--color float-center">Contact</button>
+                                                <p className="text-black text-sm mt-3">Let us know if there are signs of suicide wherever you are.</p>
+                                            </div>
+                                            <div className="w-full">
+                                                <button onClick={e => navigate('/contact')} className="btn btn--color float-center w-1/3">Contact</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </Grid>
                             <Grid item lg={4} xl={4}>
-                                <div className="w-3/2">
-                                    <div className="bg-blueSoft h-[290px] p-3 rounded-3xl shadow-md">
+                                <div className="w-full">
+                                    <div className="bg-blueSoft h-fit p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
                                             <div className="w-full">
                                                 <p className="text-black font-bold text-xl pb-5">Join Community</p>
@@ -227,12 +160,16 @@ export default function Home() {
                                                 </center>
                                             </div>
                                             <div className="w-full">
-                                                <button className="btn btn--color float-center">Join</button>
+                                                <p className="text-black text-sm mt-3">Join the community and have a fun experience.</p>
+                                            </div>
+                                            <div className="w-full">
+                                                <button className="btn btn--color float-center w-1/3">Join</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </Grid>
+                            <Grid item lg={2} xl={2} />
                         </Grid>
                     </Grid>
                 </Grid>
