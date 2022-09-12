@@ -27,11 +27,11 @@ export default function Home(props) {
                             <p className="text-left font-poppins text-2xl font-medium text-blueCustom mb-4">Karena Hidupmu Sangat Berharga,</p>
                         </Grid>
                         <Grid item lg={12} xl={12}>
-                            <p className="text-left font-poppins text-5xl font-semibold text-blueCustom mb-4">Kami hadir Untukmu</p>
+                            <p className="text-left font-poppins text-5xl font-semibold text-blueCustom mb-4">Kami Hadir Untukmu</p>
                         </Grid>
                         <Grid item lg={12} xl={12}>
                             <div className='w-2/3'>
-                                <p className="text-left font-poppins text-xl text-blueMedium mb-8">Tidak Ada Yang Lebih Berharga Dari Hidupmu, Jika Butuh Bantuan Kontak Kami Secepatnya.</p>
+                                <p className="text-left font-poppins text-xl text-blueMedium mb-8">Tidak ada yang lebih berharga dari hidupmu, jika butuh bantuan kontak kami secepatnya.</p>
                             </div>
                         </Grid>
                         <Grid item lg={12} xl={12}>
@@ -50,7 +50,7 @@ export default function Home(props) {
             </Grid>
             <Grid container className='pl-20 pr-20 h-fit mb-20' ref={aboutSection}>
                 <Grid item lg={12} xl={12}>
-                    <p className="my-20 text-3xl font-extrabold text-blueCustom">Get To More About Us</p>
+                    <p className="my-20 text-3xl font-extrabold text-blueCustom">Tentang Kami</p>
                 </Grid>
                 <Grid item lg={12} xl={12}>
                     <Grid container spacing={5}>
@@ -59,7 +59,8 @@ export default function Home(props) {
                                 <div className="bg-blueMedium h-[300px] p-3 rounded-3xl shadow-md">
                                     <div className="flex flex-col space-y-4 p-3">
                                         <div className="w-full">
-                                            <p className="text-white font-bold">Best Psychiatrist / Psychologist</p>
+                                            <p className="text-white font-bold">Psikiater / Psikolog</p>
+                                            <p className="text-white font-bold">Terbaik</p>
                                         </div>
                                         <div className="w-full">
                                             <center>
@@ -67,7 +68,7 @@ export default function Home(props) {
                                             </center>
                                         </div>
                                         <div className="w-full">
-                                            <p className="text-white text-sm">We provide the best psychiatrists and psychologists who can help you.</p>
+                                            <p className="text-white text-sm">Kami menyediakan psikiater/psikolog terbaik untukmu.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -78,8 +79,8 @@ export default function Home(props) {
                                 <div className="bg-blueSoft h-[300px] p-3 rounded-3xl shadow-md">
                                     <div className="flex flex-col space-y-4 p-3">
                                         <div className="w-full">
-                                            <p className="text-black font-bold">We Care About Your</p>
-                                            <p className="text-black font-bold">Life</p>
+                                            <p className="text-black font-bold">Kami Peduli Akan</p>
+                                            <p className="text-black font-bold">Hidupmu</p>
                                         </div>
                                         <div className="w-full">
                                             <center>
@@ -87,7 +88,8 @@ export default function Home(props) {
                                             </center>
                                         </div>
                                         <div className="w-full">
-                                            <p className="text-black text-sm mt-3">Let us know if there are signs of suicide wherever you are.</p>
+                                            <p className="text-black text-sm mt-3">Beritahu kami apabila ada tanda</p>
+                                            <p className="text-black text-sm">bunuh diri disekitarmu</p>
                                         </div>
                                     </div>
                                 </div>
@@ -98,8 +100,8 @@ export default function Home(props) {
                                 <div className="bg-blueMedium h-[300px] p-3 rounded-3xl shadow-md">
                                     <div className="flex flex-col space-y-4 p-3">
                                         <div className="w-full">
-                                            <p className="text-white font-bold">We Are There For</p>
-                                            <p className="text-white font-bold">You</p>
+                                            <p className="text-white font-bold">Kami Ada</p>
+                                            <p className="text-white font-bold">Untukmu</p>
                                         </div>
                                         <div className="w-full h-[100px]">
                                             <center>
@@ -107,7 +109,8 @@ export default function Home(props) {
                                             </center>
                                         </div>
                                         <div className="w-full h-[100px]">
-                                            <p className="text-white text-sm mt-3">Join our community and find the best friend for you</p>
+                                            <p className="text-white text-sm mt-3">Join komunitas kami dan temukan</p>
+                                            <p className="text-white text-sm">teman terbaik untukmu</p>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +123,7 @@ export default function Home(props) {
             <Grid container className='pl-20 pr-20 h-fit mb-20' ref={careSection}>
                 <Grid container className='pl-10 pr-10 h-fit mb-20'>
                     <Grid item lg={12} xl={12}>
-                        <p className="my-20 text-3xl font-extrabold text-blueCustom">We Care About You</p>
+                        <p className="my-20 text-3xl font-extrabold text-blueCustom">Kami Ada Untukmu</p>
                     </Grid>
                     <Grid item lg={12} xl={12}>
                         <Grid container spacing={10}>
@@ -130,7 +133,7 @@ export default function Home(props) {
                                     <div className="bg-blueSoft h-fit p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
                                             <div className="w-full">
-                                                <p className="text-black font-bold text-xl pb-5">Contact Us For Report</p>
+                                                <p className="text-black font-bold text-xl pb-5">Kontak Kami Untuk Lapor</p>
                                             </div>
                                             <div className="w-full pb-5">
                                                 <center>
@@ -138,7 +141,9 @@ export default function Home(props) {
                                                 </center>
                                             </div>
                                             <div className="w-full">
-                                                <p className="text-black text-sm mt-3">Let us know if there are signs of suicide wherever you are.</p>
+                                                <p className="text-black text-sm mt-3">Beritahu kami apabila ada tanda</p>
+                                                <p className="text-black text-sm">bunuh diri disekitarmu.</p>
+
                                             </div>
                                             <div className="w-full">
                                                 <button onClick={e => navigate('/contact')} className="btn btn--color float-center w-1/3">Contact</button>
@@ -152,7 +157,7 @@ export default function Home(props) {
                                     <div className="bg-blueSoft h-fit p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
                                             <div className="w-full">
-                                                <p className="text-black font-bold text-xl pb-5">Join Community</p>
+                                                <p className="text-black font-bold text-xl pb-5">Join Komunitas</p>
                                             </div>
                                             <div className="w-full pb-5">
                                                 <center>
@@ -160,7 +165,7 @@ export default function Home(props) {
                                                 </center>
                                             </div>
                                             <div className="w-full">
-                                                <p className="text-black text-sm mt-3">Join the community and have a fun experience.</p>
+                                                <p className="text-black text-sm mt-3">Join komunitas kami dan dapatkan pengalaman seru untukmu.</p>
                                             </div>
                                             <div className="w-full">
                                                 <button className="btn btn--color float-center w-1/3">Join</button>
