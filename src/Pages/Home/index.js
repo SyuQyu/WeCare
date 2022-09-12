@@ -24,14 +24,14 @@ export default function Home(props) {
                 <Grid item lg={8}>
                     <Grid container className='mt-20 pl-8'>
                         <Grid item lg={12} xl={12}>
-                            <p className="text-left font-poppins text-2xl font-medium text-blueCustom mb-4">Because Your Life is Precious,</p>
+                            <p className="text-left font-poppins text-2xl font-medium text-blueCustom mb-4">Karena Hidupmu Sangat Berharga,</p>
                         </Grid>
                         <Grid item lg={12} xl={12}>
-                            <p className="text-left font-poppins text-5xl font-semibold text-blueCustom mb-4">We Are There For You</p>
+                            <p className="text-left font-poppins text-5xl font-semibold text-blueCustom mb-4">Kami hadir Untukmu</p>
                         </Grid>
                         <Grid item lg={12} xl={12}>
                             <div className='w-2/3'>
-                                <p className="text-left font-poppins text-xl text-blueMedium mb-8">Nothing is more valuable than your life, therefore if you need help contact us immediately.</p>
+                                <p className="text-left font-poppins text-xl text-blueMedium mb-8">Tidak Ada Yang Lebih Berharga Dari Hidupmu, Jika Butuh Bantuan Kontak Kami Secepatnya.</p>
                             </div>
                         </Grid>
                         <Grid item lg={12} xl={12}>
