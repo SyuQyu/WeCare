@@ -14,7 +14,7 @@ export default function Care() {
         '& input:valid:focus + fieldset': {
             borderColor: '#051287',
             borderLeftWidth: 6,
-            padding: '4px !important',// override inline-style
+            padding: '4px !important'
         }
     });
     return (
