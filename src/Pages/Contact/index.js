@@ -21,9 +21,9 @@ export default function Care() {
         <>
             <p className="mt-5 text-2xl font-extrabold text-blueCustom">Formulir</p>
             <p className="mt-2 text-base text-blueCustom">Harap Isi Formulir Dengan Benar</p>
-            <Grid container className="mt-6 mb-[100px]">
-                <Grid item xl={2} lg={2} />
-                <Grid item xl={8} lg={8}>
+            <Grid container className="mt-6 mb-[100px]" style={{height: "60vh"}}>
+                <Grid item xl={2} lg={2} md={2} sm={1} xs={1} />
+                <Grid item xl={8} lg={8} md={8} sm={10} xs={10}>
                     <div className="flex flex-col p-6 w-full bg-white rounded-lg border border-gray-200 shadow-md">
                         <CustomTextField
                             label="Nama"
@@ -57,7 +57,7 @@ export default function Care() {
                         </div>
                     </div>
                 </Grid>
-                <Grid item xl={2} lg={2} />
+                <Grid item xl={2} lg={2} md={2} sm={1} xs={1} />
             </Grid>
         </>
 

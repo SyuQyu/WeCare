@@ -14,7 +14,7 @@ export default function Consult() {
                 <Grid container spacing={5}>
                     {
                         dataPsychiatrist?.map((data, index) => (
-                            <Grid item lg={3} xl={3} key={index}>
+                            <Grid item lg={3} xl={3} md={3} sm={6} xs={12} key={index}>
                                 <div className="w-5/6 mx-auto">
                                     <div className="bg-blueSoft h-fit p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
@@ -51,7 +51,7 @@ export default function Consult() {
                 <Grid container spacing={5} className="pb-6">
                     {
                         dataPsychologist?.map((data, index) => (
-                            <Grid item lg={3} xl={3} key={index}>
+                            <Grid item lg={3} xl={3} md={3} sm={6} xs={12} key={index}>
                                 <div className="w-5/6 mx-auto">
                                     <div className="bg-blueSoft h-fit p-3 rounded-3xl shadow-md">
                                         <div className="flex flex-col space-y-4 p-3">
