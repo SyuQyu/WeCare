@@ -1,12 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useNavigate  } from "react-router-dom";
 import { Grid, } from '@mui/material';
+//Gambar tangan dari canva
 import imgHand from '../../Assets/images/3.svg';
+//Gambar dari plugin figma
 import flag from '../../Assets/images/flag.svg';
+//Gambar dari plugin figma
 import heart from '../../Assets/images/heart-pulse.svg';
+//Gambar dari plugin figma
 import users from '../../Assets/images/users.svg';
+//Gambar dari plugin figma
 import phone from '../../Assets/images/phone.svg';
+//Gambar dari plugin figma
 import smile from '../../Assets/images/smile.svg';
+
 import '../../Assets/css/styles.css';
 export default function Home(props) {
     let navigate = useNavigate(); 

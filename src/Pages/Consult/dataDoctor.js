@@ -1,3 +1,4 @@
+//Semua gambar dari freepik
 import Doctor1 from '../../Assets/images/Group 1.svg';
 import Doctor2 from '../../Assets/images/Group 3.svg';
 import Doctor3 from '../../Assets/images/Group 4.svg';
