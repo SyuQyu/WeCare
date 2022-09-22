@@ -1,21 +1,3 @@
-## Contributors
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<!-- Copy-paste in your Readme.md file -->
-
-<a href="https://github.com/SyuQyu/WeCare/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SyuQyu/WeCare" />
-</a>
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
